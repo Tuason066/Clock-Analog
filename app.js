@@ -23,5 +23,5 @@ function setAnalog() {
     minutesHand.style.transform = `rotate(${minutesDegree}deg)`;
     secondsHand.style.transform = `rotate(${secondsDegree}deg)`;
 }
-
+setAnalog();
 setInterval(setAnalog, 1000);
