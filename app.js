@@ -14,7 +14,7 @@ function setAnalog() {
     const minutesDegree = ((minutes / 60) * 360) + 90;
     const secondsDegree = ((seconds / 60) * 360) + 90;
 
-    // style
+    // styles
     const hands = document.querySelectorAll('.hands');
     hands.forEach(hand => hand.style.transition = `all 0.5s`);
     hoursHand.style.transform = `rotate(${hoursDegree}deg)`;
