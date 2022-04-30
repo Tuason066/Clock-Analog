@@ -1,0 +1,72 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #006E7F;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.clock {
+    width: 50vw;
+    height: 50vw;
+    max-width: 350px;
+    max-height: 350px;
+    background-image: url("./blank-clock-clipart-gallery-clock-face-clip-art-1020_1020.jpg");
+    background-size: cover;
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+    border: 5px solid #2A2550;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hand {
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    transition-timing-function: cubic-bezier(.17,1.94,.69,1);
+}
+
+.hand:nth-child(1) {
+    height: .2rem;
+    background-color: #F8CB2E;
+    z-index: 20;
+    width: 45%;
+    left: 5%;
+}
+.hand:nth-child(2) {
+    height: .15rem;
+    background-color: #E04D01;
+    z-index: 10;
+    width: 35%;
+    left: 15%;
+}
+.hand:nth-child(3) {
+    height: .1rem;
+    background-color: #FF7700;
+    z-index: 30;
+    width: 47%;
+    left: 3%;
+}
+
+.round-clock {
+    width: .5rem;
+    height: .5rem;
+    border: 2px solid #2A0944;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    z-index: 50;
+}
